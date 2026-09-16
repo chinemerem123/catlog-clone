@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+      font-family: "Manrope", sans-serif;
+   
+}
+
+:root{
+    --btn-bg: #5644b3;
+    --font-header: "DM Sans", sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.text-primary1{
+    color:#aca2e7;
+}
+
+.btn-primary1{
+    background-color: var(--btn-bg);
+    border: none;
+    border-radius: 0;
+    padding: 10px 25px;
+    font-size: 10px;
+    color:white;
+    border-radius: 8px;
+}
+
+.btn-white{
+    background-color: white;
+    border: none;
+    border-radius: 0;
+    padding: 10px 25px;
+    font-size: 10px;
+    color:#332098;
+    border-radius: 8px;
+}
+
+.btn-blank{
+    border: none;
+    border-radius: 0;
+    padding: 10px 10px;
+    font-size: 10px;
+    color:white;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: 0.3s;
+    &:hover{
+        color:var(--btn-bg);
+
+    }
+}
+
+
+#con-bg{
+    width: 100%;
+    height: 650px;
+    position: absolute;
+    top:0;
+    background-image: url("../img/png.png");
+}
+
+#logo{
+    width: 80px;
+}
+
+#nav-items-holder{
+    margin-left: 10px;
+
+    li{
+        margin-left: 20px;
+        font-size: 13px;
+        a{
+            color: white;
+        }
+    }
+
+}
+
+
+
+#country-flag{
+    list-style: none;
+    a{
+        font-size: 13px;
+ img{
+width: 25px;
+height: 25px;
+    }
+    }
+   
+}
+
+#hero{
+   .mobile{
+    text-decoration: none;
+    width: 290px;
+    display: flex;
+    position: relative;
+    left:calc(50% - 145px);
+    border-radius: 100px; 
+  align-items: center;
+  gap: 10px;
+  color: black;
+  margin-top: 20px;
+  scale: 0.9;
+
+    .new{
+        background-color: #5644b3;
+        color:white;
+        font-size: 10px;
+        border-radius: 50px;
+        padding: 3px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text{
+        font-size: 12px;
+    }
+   } 
+
+   .h1{
+    font-family:var(--font-header) ;
+    font-size: 55px;
+    font-weight: 600;
+   }
+
+   #h1-2{
+    margin-top: -10px;
+   }
+
+   .text-content{
+    width: 450px;
+    position: relative;
+    left: calc(50% - 225px);
+    color:#e9e5ff;
+    font-size: 15px;
+   }
+}
+
+figure{
+    width: 70%;
+    height: 400px;
+    position: relative;
+    left: calc(50% - 35%);
+    background-image: url("https://res.cloudinary.com/catlog/image/upload/c_scale,w_2025/v1756307242/marketing-pages/thumbnails/hero-image.webp");
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px;
+    border-radius: 30px;
+
+    .overlay{
+        width:100%;
+        height:100%;
+        background-color: rgba(51, 32, 152,0.2);
+        display: flex;
+        align-items: center;
+            justify-content: center;
+
+        #play{
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+    }
+}
+
+#modal-video{
+    height: 400px;
+}
+
+@media screen and (max-width:800px){
+
+    #con-bg{
+        height: 600px;
+    }
+   #nav-items-holder{
+    margin-left: 0px;
+    position: relative;
+   
+
+    li{
+        margin-left: 0px;
+
+        a{
+            color:black;
+        }
+    }
+
+   } 
+
+   .navbar-collapse{
+    background-color: white;
+    margin-top: 12px;
+    top:0;
+     padding: 20px;
+     border-radius: 20px;
+   }
+
+   #search{
+    display: block;
+   }
+
+   .btn-blank{
+    width:100%;
+    border:1px solid var(--btn-bg);
+    color: #5644b3;
+   }
+
+   .btn-primary1{
+    width: 100%;
+    margin-top: 10px;
+   }
+
+   #country-flag{
+    display: none;
+   }
+
+   #btn-toggler{
+    box-shadow: none;
+    border:none;
+      color:white;
+
+    .navbar-toggler-icon{
+      display: none;
+    }
+   }
+
+   #hero{
+    .h1{
+        font-size:35px ;
+    }
+      #h1-2{
+    margin-top: -5px;
+   }
+
+   .text-content{
+    width:300px;
+    left: calc(50% - 150px);
+    font-size: 13px;
+   }
+
+   .CAT{
+    width: 100%;
+    margin-top:10px;
+    scale: 0.9;
+    button{
+        width:100%;
+        font-size: 8px;
+    }
+   }
+
+
+   }
+
+   figure{
+    width: 100%;
+    left: calc(50% - 50%);
+    height: 250px;
+   }
+}
