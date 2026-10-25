@@ -298,6 +298,178 @@ figure .overlay #play {
   margin-top: 50px;
 }
 
+#chowbot-2 {
+  position: relative;
+  width: 100%;
+  height: 850px;
+  background-position: center;
+  background-size: cover;
+}
+#chowbot-2 #subtract {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+#chowbot-2 #container {
+  z-index: 10;
+  margin-top: 150px;
+  position: relative;
+}
+#chowbot-2 #container .h1 span {
+  font-family: var(--font-header);
+}
+#chowbot-2 #container .slider-holder {
+  width: 100%;
+  height: 470px;
+  background-color: #000000;
+  position: relative;
+  margin-top: 50px;
+  border-radius: 30px;
+}
+#chowbot-2 #container .slider-holder .slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 0%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+#chowbot-2 #container .slider-holder .slide #play {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  Z-index: 10;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 120px;
+  text-align: left;
+  width: 60%;
+  left: 10%;
+  color: white;
+}
+
+#faq {
+  margin-top: 100px;
+}
+#faq .faq-holder {
+  width: 70%;
+  position: relative;
+  left: 15%;
+}
+
+.accordion-item {
+  margin-top: 20px;
+  border: none;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+}
+.accordion-item .accordion-header {
+  background-color: #f8f8f8;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 20px;
+}
+.accordion-item .accordion-header .accordion-button {
+  background-color: #f8f8f8;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+.accordion-item .accordion-collapse {
+  border: none;
+}
+.accordion-item .accordion-collapse .accordion-body {
+  border: none;
+  font-size: 14px;
+  color: rgb(97, 97, 97);
+  background-color: #f8f8f8;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#footer {
+  background-color: #050537;
+}
+#footer .ava-holder {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  padding: 10px;
+  width: 280px;
+  position: relative;
+}
+#footer .ava-holder #flag-icons {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  padding: 6px;
+}
+#footer .ava-holder #flag-icons img {
+  width: 30px;
+  height: 30px;
+}
+#footer .h1 {
+  font-size: 60px;
+  font-family: var(--font-header);
+}
+#footer #footer-img {
+  width: 550px;
+}
+#footer .footer-body {
+  position: relative;
+}
+#footer .footer-body .hold {
+  position: relative;
+  text-align: left;
+}
+#footer .footer-body .hold .h6 {
+  font-size: 14px;
+  color: #bfbfbf;
+}
+#footer .footer-body .hold ul {
+  padding-left: 0;
+}
+#footer .footer-body .hold ul li {
+  list-style: none;
+  margin-top: 10px;
+  margin-left: 0;
+}
+#footer .footer-body .hold ul li a {
+  color: white;
+  text-decoration: none;
+  margin-left: 0;
+}
+#footer .c {
+  width: 100%;
+  position: realative;
+  align-items: center;
+}
+#footer .c .social-icons {
+  position: absolute;
+  right: 150px;
+}
+#footer .c .social-icons .icon-holder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media screen and (max-width: 800px) {
   #con-bg {
     height: 600px;
@@ -413,5 +585,35 @@ figure .overlay #play {
   }
   #chowbot #container .img-holder {
     margin-top: 40px;
+  }
+  #chowbot-2 {
+    height: 520px;
+  }
+  #chowbot-2 #subtract {
+    height: 100%;
+    width: 100%;
+  }
+  #chowbot-2 #container {
+    margin-top: 100px;
+  }
+  #chowbot-2 #container .slider-holder {
+    height: 270px;
+  }
+  #faq .faq-holder {
+    width: 100%;
+    left: 0%;
+  }
+  #footer .h1 {
+    font-size: 40px;
+  }
+  #footer #footer-img {
+    width: 100%;
+    left: 0%;
+    margin-top: 40px;
+  }
+  #footer .c .social-icons {
+    position: relative;
+    right: 0;
+    margin-top: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
